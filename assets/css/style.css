@@ -1,0 +1,231 @@
+/* CSS DE LA NAV BARR */
+@font-face {
+  font-family: "lato";
+  src: url(../font/Lato-Black.ttf);
+}
+
+@font-face {
+  font-family: "raleway";
+  src: url(../font/Raleway-Italic-VariableFont_wght.ttf);
+}
+
+* {
+  font-family: "raleway";
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+}
+
+#navbar {
+  display: grid;
+  min-height: 100px;
+  grid-auto-flow: column;
+  background-color: #ffffff;
+  grid-gap: 1.5em;
+  padding: 0 40px;
+  -webkit-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  -moz-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+}
+
+#logo {
+  display: grid;
+  justify-content: start;
+  align-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.logo span {
+  color: #0474bc;
+}
+
+#links {
+  display: grid;
+  justify-content: right;
+  align-content: center;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+  font-family: "Open Sans", sans-serif;
+}
+
+#links a {
+  text-decoration: none;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#links a:hover {
+  color: #0474bc;
+}
+
+/* =======================
+  ******* Mobile Menu ******
+  ========================*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #fff;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+a {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* PAGE ACCEUIL CONTENU */
+h1 {
+  text-align: center;
+  color: #0474bc;
+}
+
+#containerOne>img {
+  width: 80%;
+}
+
+#containerOne>div>p {
+  font-size: 1.25em;
+  margin: 0 3vw 0 3vw;
+}
+
+#containerOne>div>h2 {
+  color: #0474bc;
+  margin: 3vh 0 3vh 0;
+  font-size: 2.5em;
+}
+
+#containerOne {
+  text-align: center;
+  margin: 5vh 20vw 10vh 20vw;
+}
+
+/* PAGE CERTIFICATION */
+h2 {
+  text-align: center;
+}
+
+#certif {
+  text-align: center;
+}
+
+#certif>p {
+  font-size: 1.5em;
+}
+
+#certif>img {
+  width: 50%;
+}
+
+/* PAGE AVANT/APRES */
+#operationOne>img,
+#operationTwo>img,
+#operationThree>img {
+  width: 50%;
+  margin-top: 5vh;
+}
+
+#operationOne,
+#operationTwo,
+#operationThree {
+  text-align: center;
+  border: 1px solid #0474bc;
+  margin: 6vh 20vw 6vh 20vw;
+}
+
+#operationOne>p,
+#operationTwo>p,
+#operationThree>p {
+  margin: 2vh 5vw 2vh 5vw;
+  font-size: 1.2em;
+}
+
+/* Mobile to Tablet  */
+.mobile-btn {
+  align-self: center;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+  #links,
+  .mobile-menu {
+    display: none;
+  }
+
+  #logo {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-gap: 70px;
+  }
+}
+
+/* Tablet to Desktop */
+@media (min-width: 768px) {
+  .mobile-btn {
+    display: none;
+  }
+}
+
+@media ALL AND (max-width : 800px) {
+  h1 {
+    font-size: 1.2em;
+  }
+
+  h2,#containerOne>div>h2 {
+    font-size: 1em;
+  }
+
+  #certif>p,  #containerOne>div>p {
+    font-size: 0.8em;
+  }
+
+  #containerOne {
+    margin: 1vh 2vw 1vh 2vw;
+  }
+  #operationOne, #operationTwo, #operationThree{
+    margin: 2vh 2vw 2vh 2vw;
+  }
+  #logo{
+    font-size: 1.2em;
+  }
+  #operationOne>p,
+  #operationTwo>p,
+  #operationThree>p {
+    margin: 2vh 2vw 2vh 2vw;
+    font-size: 0.8em;
+  }
+}
+
+/* CSS PAGE INDEX */
