@@ -177,7 +177,7 @@ h2 {
   align-self: center;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media ALL AND (max-width: 767px) {
 
   #links,
   .mobile-menu {
